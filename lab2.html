@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LABA 4</title>
+	<script type="text/javascript">
+		var quantity="";
+		function func()
+		{
+			quantity-=1;
+			if(quantity>0)
+			{
+			document.getElementById('quan').innerHTML="Упс! Зараз на стіні стоїть " + quantity + " пляшок";
+			}
+			else
+			{
+				document.getElementById('quan').innerHTML="Жодної!!!";
+			}
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<script type="text/javascript">
+			/*alert("Сначала пройдем тест на будущее!");
+			var ChildNum=prompt("Скільки б ви хотіли мати дітей?");
+			var WifeName=prompt("Як би ви хотіли щоб звали вашу дружину?");
+			var LiveAt=prompt("Де б ви хотіли жити?");
+			var EmployedBy=prompt("Яку б ви хотіли посаду?");
+			if(confirm("Ви впевнені що хочете знати своє майбутнє? Декого воно може сильно вразити.")) alert("Ви укладете шлюб з " + WifeName + " та у вас буде " + ChildNum + " дутей. Ви переъдите у мысто " + LiveAt + " на посаду" + EmployedBy + ".");
+		</script>
+	<script type="text/javascript">
+		var fact=new Array();
+		fact[0]=1;
+		for (var i=1; i<10; i++)
+		{
+			fact[i]=i*fact[i-1];
+		}
+		for (var i=0; i<10; i++)
+		{
+			for (var j=0; j<i+1; j++)
+			{
+				document.write(fact[i]/(fact[j]*fact[i-j]) + " ");
+			}
+			document.write("<br>");
+		}	
+	</script>
+	<script type="text/javascript">
+		/*while (!/^[1-9]{1}[0-9]*$/.test(quantity))
+		quantity=prompt("Введіть кількість пляшок");
+		document.write("<span onmouseover='func()' id='quan'>Зараз на стіні стоїть " + quantity + " пляшок</span>");
+	</script>
+	<script type="text/javascript">
+		/*var arr = new Array(
+			{value: 100, type: 'USD'},
+			{value: 215, type: 'EUR'},
+			{value: 7, type: 'EUR'},
+			{value: 99, type: 'USD'},
+			{value: 354, type: 'USD'},
+			{value: 12, type: 'EUR'},
+			{value: 77, type: 'USD'},
+		);
+		var sum=0;
+		for (var i=0; i<7; i++)
+		{
+			if (arr[i].type=='USD' && arr[i].value<100) sum+=arr[i].value;
+		}
+		document.write(sum);
+		for (var i=0; i<7; i++)
+		{
+			if (arr[i].type=='EUR') 
+				{
+					arr[i].value*=2;
+					document.write("<br>");
+					document.write(arr[i].type + " " + arr[i].value + "<br>");
+				}
+		}
+	</script>
+</center>
+</body>
+</html>
